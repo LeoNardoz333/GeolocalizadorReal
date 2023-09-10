@@ -1,0 +1,12 @@
+CREATE DATABASE Gps;
+
+USE Gps;
+
+CREATE TABLE Refris (
+   Id INT AUTO_INCREMENT PRIMARY KEY,
+   Nombre VARCHAR(255) NOT NULL,
+   Tamaño VARCHAR(50),
+   Color VARCHAR(50),
+   Ubicación VARCHAR(255),
+   Foto VARCHAR(255)
+);
