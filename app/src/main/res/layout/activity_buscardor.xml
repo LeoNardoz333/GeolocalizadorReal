@@ -6,9 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Buscardor">
 
+    <SearchView
+        android:id="@+id/svBusqueda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/svBusqueda">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRefris"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/svBusqueda"/>
 
+    </androidx.core.widget.NestedScrollView>
 </RelativeLayout>
